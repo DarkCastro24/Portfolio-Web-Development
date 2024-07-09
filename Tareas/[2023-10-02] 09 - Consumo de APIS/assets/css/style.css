@@ -1,0 +1,43 @@
+body {
+    display: flex;
+    background-color: lightgray;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.flex-card {
+    background-color: white;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    align-content: center;
+    flex-direction: column; /* Los divs se apilan verticalmente */
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-section {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.flex-card .card-section:last-child {
+    border-bottom: none;
+}
+
+#load-user {
+    background-color: #151045; 
+    color: white; 
+    padding: 12px 25px; 
+    font-size: 16px; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+p{
+    padding-top: 20px;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+    <section class="container">
+        <article>
+            <form>
+                <h3>Complete la informacion del estudiante</h3>
+                <input type="text" id="carnet" placeholder="Carnet">
+                <input type="text" id="nombre" placeholder="Nombre">
+                <input type="text" id="carrera" placeholder="Carrera">
+                <input type="email" id="correo" placeholder="Correo institucional">
+                <input type="text" id="cum" placeholder="Promedio global">
+                <button type="button" onclick="readValues()">Enviar</button>
+            </form>
+        </article>
+        <article>
+            <div class="card"> 
+                <h2>Información del estudiante</h2>
+                <label id="lblcarnet" >Carnet: </label>
+                <label id="lblnombre" >Nombre: </label>
+                <label id="lblcarrera" >Carrera: </label>
+                <label id="lblcorreo" >Correo Electrónico: </label>
+                <label id="lblcum" >Promedio Global: </label>
+            </div>
+        </article>
+    </section>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

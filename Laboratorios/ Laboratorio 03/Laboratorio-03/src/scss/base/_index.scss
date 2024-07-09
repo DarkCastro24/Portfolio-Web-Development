@@ -1,0 +1,10 @@
+/*  Importamos todos los scss de la carpeta base  */
+@forward 'variables';
+@forward 'mixins';
+@forward 'normalize';
+@forward 'globals';
+
+/*  Use nos permite darle un alias a los scss para referenciar sus variables  */
+@use '../base/variables' as v;
+@use '../base/mixins' as m;
+

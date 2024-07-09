@@ -1,0 +1,62 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--theme-main-color);
+}
+
+h1,
+h2,
+p,
+a {
+    color: var(--theme-main-text);
+}
+
+main {
+    height: 75vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#site-title {
+    margin-top: 1rem;
+    font-size: 2.5rem;
+}
+
+.profile-picture {
+    width: 25vh;
+    height: auto;
+    object-fit: contain;
+}
+
+.social-media {
+    margin-top: 1.75rem;
+    margin-bottom: 0.4rem;
+}
+
+.social-media > a {
+    margin: 0 1rem;
+}
+
+.nav-btn {
+    padding: 0.8rem 1.6rem;
+    border-radius: 20px;
+    background-color: var(--theme-button);
+    font-size: 1.1rem;
+}
+
+.nav-btn:hover {
+    background-color: var(--theme-active-text);
+    color: var(--theme-main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        margin-top: 0;
+    }
+  }

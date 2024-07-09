@@ -1,0 +1,15 @@
+@use '../base/theme' as v;
+
+footer{
+    height: 60px;
+    background-color: v.$primary-color-dark;
+    color: white;
+    font-size: 11px;
+}
+
+footer h2{
+    padding-top: 20px;
+    font-family: v.$item-font;
+    text-align: center;
+    font-weight: normal;
+}

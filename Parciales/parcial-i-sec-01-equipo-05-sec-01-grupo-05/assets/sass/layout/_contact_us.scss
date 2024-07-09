@@ -1,0 +1,82 @@
+@use '../base/theme' as v;
+@use '../base/variables' as t;
+
+@media (max-width: t.$device-laptop) {
+    #contact-us form {
+        width: 90%;
+    }
+}
+
+#contact-us {
+    background-image: url("../images/main-pattern.png");
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 500px;
+    margin-top: -10px;
+}
+
+#contact-us h3 {
+    padding-top: 40px;
+    padding-bottom: 30px;
+    font-size: 29px;
+    font-family: v.$title-font;
+    color: v.$text-color;
+    font-weight: normal;
+}
+
+#contact-us form {
+    background-color: v.$primary-color-dark;
+    border: 1px solid black;
+    opacity: 0.8;
+    border-radius: v.$border-radius;
+    padding: 20px;
+    width: 50%;
+}
+
+#contact-us form div {
+    display: flex;
+    flex-direction: column;
+    padding: 6px;
+}
+
+#contact-us form div input {
+    border-radius: v.$border-radius;
+    color: v.$text-color;
+    background-color: v.$light-backdrop-color;
+    height: 1.2rem;
+    font-family: v.$mono-font;
+}
+
+#contact-us form div input::placeholder {
+    color: v.$text-color;
+}
+
+#contact-us form div textarea {
+    border-radius: v.$border-radius;
+    height: 4rem;
+    background-color: v.$light-backdrop-color;
+    color: v.$text-color;
+}
+
+#contact-us form div label {
+    color: v.$text-color;
+    font-family: v.$item-font;
+    margin-bottom: 5px;
+}
+
+#contact-us form button {
+    margin-top: 6px;
+    float: right;
+    border-radius: 6px;
+    height: 40px;
+    width: 60px;
+    background-color: v.$light-backdrop-color;
+    color: v.$text-color;
+}
+
+@media (max-width: t.$device-laptop) {
+    #contact-us form {
+        width: 86%;
+    }
+}

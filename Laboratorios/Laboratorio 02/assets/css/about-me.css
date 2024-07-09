@@ -1,0 +1,139 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--theme-main-color);
+}
+
+h1,
+h2,
+a {
+    color: var(--theme-main-text);
+}
+
+section {
+    width: 80vw;
+    height: auto;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-auto-rows: auto;
+    row-gap: 2.5rem;
+}
+
+.profile-picture {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.profile-picture > img {
+    width: 60%;
+    height: auto;
+    object-fit: contain;
+}
+
+.information {
+    height: auto;
+    width: 100%;
+
+    background-color: #faf9ff;
+    padding: 2rem;
+    border-radius: 0.9rem;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 2rem;
+}
+
+.information > div {
+    width: 45%;
+    height: auto;
+}
+
+.d-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.about-me p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.nav-btn {
+    width: 9.5rem;
+    padding: 0.8rem 1.6rem;
+    border-radius: 20px;
+    font-size: 1.1rem;
+    background-color: var(--theme-button);
+    color: var(--theme-main-text);
+    margin-bottom: 0.5rem;
+}
+
+.nav-btn:hover {
+    background-color: var(--theme-active-text);
+    color: var(--theme-main-color);
+    transition: all 0.3s ease-in-out;
+}
+
+.skills label {
+    font-weight: bold;
+}
+
+.skills progress {
+    width: 100%;
+    height: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+#skill-html {
+    accent-color: #e5515f;
+}
+
+#skill-css {
+    accent-color: #5a54b3;
+}
+
+#skill-js {
+    accent-color: #e5515f;
+}
+
+@media screen and (max-width: 850px) {
+    section {
+        width: 90vw;
+        margin-top: 3rem;
+    }
+
+    .grid { 
+        grid-template-columns: 1fr;
+    }
+
+    .profile-picture {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .information {
+        flex-direction: column-reverse;
+    }
+
+    .information > div {
+        width: 100%;
+    }
+
+    .about-me {
+        align-items: center;
+    }
+
+    .profile-picture > img {
+        width: 70%;
+    }
+}

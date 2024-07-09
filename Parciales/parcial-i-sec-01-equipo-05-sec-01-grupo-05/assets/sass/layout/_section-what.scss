@@ -1,0 +1,137 @@
+@use '../base/theme' as t;
+
+#what-can-you-see {
+    background-image: url("../images/main-pattern.png");
+    height: 100%;
+    background-color: t.$primary-color;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 75px;
+
+    h3 {
+        padding: 2rem;
+        text-align: center;
+        color: white;
+        font-size: 36px;
+        font-weight: normal;
+        font-family: t.$title-font;
+    }
+
+    img {
+        height: 75px;
+    }
+}
+
+/* Estilos para los primeros tres artículos */
+.cards-container article:nth-child(-n+3) {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* Estilos para los últimos tres artículos */
+.cards-container article:nth-child(n+4) {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+#what-can-you-see article div {
+    flex: 3;
+}
+
+@media (max-width: 1150px) {
+    #what-can-you-see article {
+        width: calc(50% - 20px);
+        box-sizing: border-box;
+        display: flex;
+        max-width: 600px;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    #what-can-you-see article {
+        width: calc(100% - 20px);
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        max-width: 600px;
+        flex-direction: column;
+    }
+}
+
+#what-can-you-see article figure {
+    flex: 1;
+}
+
+.info {
+    h4 {
+        text-align: center;
+        font-size: 1.6rem;
+        font-family: t.$title-font;
+        color: white;
+        font-weight: normal;
+    }
+
+    p {
+        text-align: justify;
+        color: white;
+        padding: 1rem;
+        font-size: 1.3rem;
+        font-weight: normal;
+    }
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+
+    article {
+        width: calc(33.33% - 20px);
+        margin: 10px;
+        padding: 10px;
+        box-sizing: border-box;
+        display: flex;
+        margin: 10px;
+        padding: 10px;
+        max-width: 600px;
+
+        p{
+            font-size: t.$font-size;
+        }
+
+        figure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            padding: 1rem;
+
+            img {
+                height: 100px;
+                width: 100px;
+                padding: .5rem;
+            }
+        }
+
+        .info {
+            &:hover {
+                background-color: t.$text-color;
+                border-top-right-radius: 8px;
+                border-bottom-left-radius: 8px;
+
+                h4 {
+                    color: black;
+                }
+
+                p {
+                    color: black;
+                }
+            }
+        }
+    }
+}

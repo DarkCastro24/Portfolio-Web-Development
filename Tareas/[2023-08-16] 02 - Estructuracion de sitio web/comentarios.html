@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Comentarios</title>
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <link rel="shortcut icon" href="./assets/img/icon.png">
+</head>
+<body>
+
+  <header>
+    <nav class="menu">
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="computadoras.html">Computadoras</a></li>
+        <li><a href="laptops.html">Laptops</a></li>
+        <li><a href="comentarios.html">Comentarios</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article class="centrar">
+      <h1 style="padding-top: 40px">
+        Seccion de comentarios y opiniones
+      </h1>
+      <br>
+      <h3>Nos interesa saber que te ha parecido el sitio web, compartenos tu opinión completando los siguientes campos
+        !!!</h3>
+    </article>
+    <br>
+
+    <article class="centrar-form">
+      <form action="comentarios.html" method="get">
+        <fieldset>
+          <legend> Comentarios y opiniones </legend><br>
+          <label style="padding-right: 70px;">
+            Nombre
+            <input placeholder="e.g Example" type="text" name="name">
+          </label>
+
+          <label>
+            Correo electronico
+            <input placeholder="e.g Example" type="email" name="email">
+          </label><br><br>
+
+          <label>
+            Comentario
+            <input placeholder="e.g Example" type="text" name="comentario">
+          </label><br><br>
+
+          <label><input type="checkbox" id="cbox1" value="first_checkbox" /> Recibir mas contenido en mi
+            correo</label><br><br>
+          <input type="submit" value="Enviar">
+          <input type="reset">
+        </fieldset><br><br>
+
+        <fieldset>
+          <legend>Calificacíon rápida</legend><br>
+
+          <h4>¿Que te ha parecido la página?</h4><br>
+          <div>
+            <input type="radio" id="excelente" name="excelent" value="excelente" checked />
+            <label for="excelente">Excelente</label>
+          </div>
+
+          <div>
+            <input type="radio" id="buena" name="good" value="buena" />
+            <label for="buena">Buena</label>
+          </div>
+
+          <div>
+            <input type="radio" id="regular" name="regular" value="regular" />
+            <label for="regular">Regular</label>
+          </div>
+
+          <div>
+            <input type="radio" id="mala" name="mala" value="mala" />
+            <label for="mala">Mala</label>
+          </div><br>
+
+          <input type="submit" value="Enviar">
+          <input type="reset">
+        </fieldset>
+
+      </form>
+    </article>
+  </main>
+
+  <footer>
+    <h3 class="centrar espacio">Todos los derechos reservados © Diego Castro</h3>
+  </footer>
+
+</body>
+</html>
