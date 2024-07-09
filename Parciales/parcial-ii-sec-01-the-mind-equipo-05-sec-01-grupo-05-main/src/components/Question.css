@@ -1,0 +1,96 @@
+
+:root{
+    background-color: rgba(100, 148, 237, 0.638);
+}
+.pregunta{
+    font-size: medium;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+.que {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    align-content: center;
+    text-align: center;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: beige;
+    padding: 7px;
+}
+
+.cont-preg{
+    display: grid;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 7rem;
+    background-color: aliceblue;
+    
+}
+
+.cat-con{
+    display: grid;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    justify-content: center;
+    align-items: center;
+    padding: 7rem;  
+    margin-top: 5rem;
+    background-color: aliceblue;
+}
+
+.categoria{
+    color:rgba(232, 35, 13, 0.755);
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.opt{
+    background-color: rgba(237, 125, 113, 0.489);
+    padding: 6px;
+    border-radius: 7px;
+}
+
+.iniciar{
+    margin: 10px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 70px;
+    border-radius: 10px;
+    color: aliceblue;
+}
+
+.cargando{
+    display: grid;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-right: 500px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 30px;
+    margin-top: 7rem;
+    background-color: aliceblue;
+}
+
+/*Obtenido de chatgpt*/
+@media (max-width: 768px) {
+    .cat-con {
+        padding: 1rem; /* Adjust padding for smaller screens */
+        margin-top: 2rem;
+    }
+
+    .iniciar {
+        padding: 20px; /* Adjust padding for smaller screens */
+    }
+}

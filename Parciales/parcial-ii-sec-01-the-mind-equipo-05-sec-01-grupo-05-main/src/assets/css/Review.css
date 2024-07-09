@@ -1,0 +1,31 @@
+.rooo{
+    font-family: 'Times New Roman', Times, serif;
+}
+.titulo-R{
+    font-size: medium;
+    margin-top: 100px;
+    font-size: xx-large;
+}
+.container-R{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.return{
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}

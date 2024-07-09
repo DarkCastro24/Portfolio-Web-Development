@@ -1,0 +1,35 @@
+
+.container{
+    display: grid;
+    border-radius: 10px;
+    margin-left: 550px;
+    margin-right: 550px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;  
+    margin-top: 15rem;
+    background-color: aliceblue;
+}
+
+.api{
+    margin: 10px;
+    background-color: rgba(250, 142, 130, 0.333);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.iniciar{
+    margin: 10px;
+    background-color: cadetblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px 170px;
+    border-radius: 10px;
+    color: aliceblue;
+    background-color: #3498db; 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+}
